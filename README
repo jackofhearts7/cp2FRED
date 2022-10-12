@@ -1,0 +1,2 @@
+FRED API to get economic indicator data
+return a graph wiht last ~10-20 data points, min,max,avg
