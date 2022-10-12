@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    align-items: baseline;
+}
+
+p {
+    padding: 10px;
+}
+
+.brand-name {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.subtitle {
+    font-style: italic;
+}
