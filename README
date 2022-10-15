@@ -1,2 +1,4 @@
-FRED API to get economic indicator data
-return a graph wiht last ~10-20 data points, min,max,avg
+NPS API key = 3Kb9nfh2Z2t6Ti6EbqG4MaqdbGdUE8Nwo0XMdn9m
+API guidelines - https://www.nps.gov/subjects/developer/guides.htm
+API documentation - https://www.nps.gov/subjects/developer/api-documentation.htm
+Ex. of API call for information on Acadia National Park - https://developer.nps.gov/api/v1/parks?parkCode=acad&api_key=3Kb9nfh2Z2t6Ti6EbqG4MaqdbGdUE8Nwo0XMdn9m
