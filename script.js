@@ -1,5 +1,5 @@
 /* PARK SEARCH STUFF *///
-fetch("parkcodes.json")
+fetch("parkcodesfull.json")
     .then(response => {
         return response.json();
     }).then(parksJson => {
