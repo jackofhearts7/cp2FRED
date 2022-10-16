@@ -47,32 +47,24 @@ var passCodeToAPI = function(button) {
 };
 
 
-
-
-
-
 /* API CALLING STUFF */
-/*
-document.getElementById(parkSubmit).addEventListener("click", function(event) {
+document.getElementById("parkResults").addEventListener("click", function(event) {
     event.preventDefault();
-    const park = document.getElementById(parkInput).value;
-    if (park === "") 
+    const parkCode = document.getElementById(parkInput).value;
+    if (parkCode === "") 
         return;
-    console.log(park);
+    console.log(parkCode);
 
-const parkURL = "https://developer.nps.gov/api/v1/parks?parkCode=" + park + "&api_key=3Kb9nfh2Z2t6Ti6EbqG4MaqdbGdUE8Nwo0XMdn9m";
+const parkURL = "https://developer.nps.gov/api/v1/parks?parkCode=" + parkCode + "&api_key=3Kb9nfh2Z2t6Ti6EbqG4MaqdbGdUE8Nwo0XMdn9m";
 fetch(parkURL)
-.then(function(response) {
-    return response.json();
+.then(function(parkResponse) {
+    return parkResponse.json();
 }).then(function(json) {
-    let parkName = "";
-    parkName +=  
-
-
-
-
-
+    let results = "";
+    results +=  '<div class="container">' + '<div class="row">' + '<div class="col-md">' + json.fullName + "</h2>" + '</div>' + '</div>';
+    results += '<div class="container">' + '</div>' + '<div class="container">' + '<div class="col-md">';
+    for (let i = 0; i < json.activities.length; i++) {
+        results += '<div class="row">' + json.activities[i].name + '</div>' + '</div>'; 
+    }    
+    document.getElementById("parkResults").innerHTML = results;
 })});
-
-
- */
