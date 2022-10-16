@@ -1,3 +1,47 @@
+/* PARK SEARCH STUFF */
+fetch("parkcodes.json")
+    .then(response => {
+        return response.json();
+    }).then(parksJson => {
+        console.log(parksJson);
+
+        document.getElementById("parkSearch").addEventListener("keyup", function(event) {
+            var input, filter, ul, li, a, i, txtValue;
+            let counter = 0;
+            input = document.getElementById("parkSearch");
+            filter = input.value.toUpperCase();
+            searchResultsDisplay = document.getElementById("searchResults");
+            runningResults = "";
+            //ul = document.getElementById("myUL");
+            //li = ul.getElementsByTagName("li");
+            for (i = 0; i < parksJson.length; i++) {
+                currentName = parksJson[i].park_name;
+                currentCode = parksJson[i].park_code;
+                if (currentName.toUpperCase().indexOf(filter) > -1) {
+                    runningResults += '<div class="searchOption' + counter + '">';
+                    runningResults += '<p class="optionName">' + currentName + '</p>';
+                    runningResults += '<p class="optionCode">' + currentCode + '</p>';
+                    runningResults += '<button class="searchButton" value="' + counter + '">Learn About This Park</button>';
+                    runningResults += '</div>';
+                    counter++
+                } else {
+                    continue;
+                }
+                if (counter >= 5) { break; }
+            }
+            document.getElementById("searchResults").innerHTML = runningResults;
+            console.log()
+        })
+    })
+
+
+
+
+
+
+
+/* API CALLING STUFF */
+/*
 document.getElementById(parkSubmit).addEventListener("click", function(event) {
     event.preventDefault();
     const park = document.getElementById(parkInput).value;
@@ -18,3 +62,6 @@ fetch(parkURL)
 
 
 })});
+
+
+ */
