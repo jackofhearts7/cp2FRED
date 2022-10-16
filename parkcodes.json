@@ -1,0 +1,242 @@
+[
+ {
+   "park_name": "ACADIA    ",
+   "park_code": "ACAD"
+ },
+ {
+   "park_name": "ARCHES    ",
+   "park_code": "ARCH"
+ },
+ {
+   "park_name": "BADLANDS    ",
+   "park_code": "BADL"
+ },
+ {
+   "park_name": "BIG BEND    ",
+   "park_code": "BIBE"
+ },
+ {
+   "park_name": "BISCAYNE    ",
+   "park_code": "BISC"
+ },
+ {
+   "park_name": "BLACK CANYON OF THE GUNNISON    ",
+   "park_code": "BLCA"
+ },
+ {
+   "park_name": "BRYCE CANYON    ",
+   "park_code": "BRCA"
+ },
+ {
+   "park_name": "CANYONLANDS    ",
+   "park_code": "CANY"
+ },
+ {
+   "park_name": "CAPITOL REEF    ",
+   "park_code": "CARE"
+ },
+ {
+   "park_name": "CARLSBAD CAVERNS    ",
+   "park_code": "CAVE"
+ },
+ {
+   "park_name": "CHANNEL ISLANDS    ",
+   "park_code": "CHIS"
+ },
+ {
+   "park_name": "CONGAREE      ",
+   "park_code": "CONG"
+ },
+ {
+   "park_name": "CRATER LAKE    ",
+   "park_code": "CRLA"
+ },
+ {
+   "park_name": "CUYAHOGA VALLEY     ",
+   "park_code": "CUVA"
+ },
+ {
+   "park_name": "DEATH VALLEY    ",
+   "park_code": "DEVA"
+ },
+ {
+   "park_name": "DENALI     ",
+   "park_code": "DENA"
+ },
+ {
+   "park_name": "DRY TORTUGAS     ",
+   "park_code": "DRTO"
+ },
+ {
+   "park_name": "EVERGLADES     ",
+   "park_code": "EVER"
+ },
+ {
+   "park_name": "GATES OF THE ARCTIC    ",
+   "park_code": "GAAR"
+ },
+ {
+   "park_name": "GLACIER    ",
+   "park_code": "GLAC"
+ },
+ {
+   "park_name": "GLACIER BAY    ",
+   "park_code": "GLBA"
+ },
+ {
+   "park_name": "GRAND CANYON    ",
+   "park_code": "GRCA"
+ },
+ {
+   "park_name": "GRAND TETON    ",
+   "park_code": "GRTE"
+ },
+ {
+   "park_name": "GREAT BASIN    ",
+   "park_code": "GRBA"
+ },
+ {
+   "park_name": "GREAT SAND DUNES    ",
+   "park_code": "GRSA"
+ },
+ {
+   "park_name": "GREAT SMOKY MOUNTAINS     ",
+   "park_code": "GRSM"
+ },
+ {
+   "park_name": "GUADALUPE MOUNTAINS    ",
+   "park_code": "GUMO"
+ },
+ {
+   "park_name": "HALEAKALA    ",
+   "park_code": "HALE"
+ },
+ {
+   "park_name": "HAWAII VOLCANOES    ",
+   "park_code": "HAVO"
+ },
+ {
+   "park_name": "HOT SPRINGS     ",
+   "park_code": "HOSP"
+ },
+ {
+   "park_name": "ISLE ROYALE     ",
+   "park_code": "ISRO"
+ },
+ {
+   "park_name": "JOSHUA TREE    ",
+   "park_code": "JOTR"
+ },
+ {
+   "park_name": "KATMAI     ",
+   "park_code": "KATM"
+ },
+ {
+   "park_name": "KENAI  FJORDS     ",
+   "park_code": "KEFJ"
+ },
+ {
+   "park_name": "KINGS CANYON    ",
+   "park_code": "SEKI"
+ },
+ {
+   "park_name": "KOBUK VALLEY    ",
+   "park_code": "KOVA"
+ },
+ {
+   "park_name": "LAKE CLARK     ",
+   "park_code": "LACL"
+ },
+ {
+   "park_name": "LASSEN VOLCANIC    ",
+   "park_code": "LAVO"
+ },
+ {
+   "park_name": "MAMMOTH CAVE     ",
+   "park_code": "MACA"
+ },
+ {
+   "park_name": "MESA VERDE    ",
+   "park_code": "MEVE"
+ },
+ {
+   "park_name": "MOUNT RAINIER    ",
+   "park_code": "MORA"
+ },
+ {
+   "park_name": "NATIONAL PARK  OF AMERICAN SAMOA",
+   "park_code": "NPSA"
+ },
+ {
+   "park_name": "NORTH CASCADES    ",
+   "park_code": "NOCA"
+ },
+ {
+   "park_name": "OLYMPIC    ",
+   "park_code": "OLYM"
+ },
+ {
+   "park_name": "PETRIFIED FOREST    ",
+   "park_code": "PEFO"
+ },
+ {
+   "park_name": "PINNACLES    ",
+   "park_code": "PINN"
+ },
+ {
+   "park_name": "REDWOOD",
+   "park_code": "REDW"
+ },
+ {
+   "park_name": "ROCKY MOUNTAIN    ",
+   "park_code": "ROMO"
+ },
+ {
+   "park_name": "SAGUARO    ",
+   "park_code": "SAGU"
+ },
+ {
+   "park_name": "SEQUOIA    ",
+   "park_code": "SEKI"
+ },
+ {
+   "park_name": "SHENANDOAH  ",
+   "park_code": "SHEN"
+ },
+ {
+   "park_name": "THEODORE ROOSEVELT     ",
+   "park_code": "THRO"
+ },
+ {
+   "park_name": "VIRGIN ISLANDS     ",
+   "park_code": "VIIS"
+ },
+ {
+   "park_name": "VOYAGEURS     ",
+   "park_code": "VOYA"
+ },
+ {
+   "park_name": "WIND CAVE     ",
+   "park_code": "WICA"
+ },
+ {
+   "park_name": "WRANGELL-ST. ELIAS     ",
+   "park_code": "WRST"
+ },
+ {
+   "park_name": "YELLOWSTONE    ",
+   "park_code": "YELL"
+ },
+ {
+   "park_name": "YOSEMITE    ",
+   "park_code": "YOSE"
+ },
+ {
+   "park_name": "ZION    ",
+   "park_code": "ZION"
+ },
+ {
+   "park_name": "MOJAVE    ",
+   "park_code": "MOJA"
+ }
+]
