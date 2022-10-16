@@ -19,7 +19,7 @@ fetch("parkcodes.json")
                 currentName = parksJson[i].park_name;
                 currentCode = parksJson[i].park_code;
                 if (currentName.toUpperCase().indexOf(filter) > -1) {
-                    runningResults += '<div class="searchOption' + counter + '">';
+                    runningResults += '<div class="searchOption">';
                     runningResults += '<p class="optionName">' + currentName + '</p>';
                     runningResults += '<p class="optionCode">' + currentCode + '</p>';
                     runningResults += '<button class="searchButton" value="' + currentCode + '">Learn About This Park</button>';
@@ -43,7 +43,8 @@ fetch("parkcodes.json")
 var passCodeToAPI = function(button) {
     event.preventDefault();
     var code = button.getAttribute("value");
-    console.log(code);
+    document.getElementById("searchResults").innerHTML = "";
+    document.getElementById("parkSearch").value = "Search for another park";
     getParkInfoFromAPI(code);
 };
 
