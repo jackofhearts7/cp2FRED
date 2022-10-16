@@ -63,8 +63,8 @@ fetch(parkURL)
     let results = "";
     results +=  '<div class="container">' + '<div class="row">' + '<div class="col-md">' + json.fullName + "</h2>" + '</div>' + '</div>';
     results += '<div class="container">' + '</div>' + '<div class="container">' + '<div class="col-md">';
-    for (let i = 0; i < json.activities.length; i++) {
-        results += '<div class="row">' + json.activities[i].name + '</div>' + '</div>'; 
+    for (let i = 0; i < json.data[0].activities.length; i++) {
+        results += '<div class="row">' + json.data[0].activities[i].name + '</div>' + '</div>';
     }    
     document.getElementById("parkResults").innerHTML = results;
 })};
