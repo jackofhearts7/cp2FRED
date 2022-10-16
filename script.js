@@ -1,4 +1,4 @@
-document.getElementById(parkSubmit).addEventListener("click", function(event) {
+document.getElementById("parkResults").addEventListener("click", function(event) {
     event.preventDefault();
     const parkCode = document.getElementById(parkInput).value;
     if (parkCode === "") 
@@ -16,5 +16,5 @@ fetch(parkURL)
     for (let i = 0; i < json.activities.length; i++) {
         results += '<div class="row">' + json.activities[i].name + '</div>' + '</div>'; 
     }    
-    document.getElementById('parkResults').innerHTML = results;
+    document.getElementById("parkResults").innerHTML = results;
 })});
