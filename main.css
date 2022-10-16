@@ -28,6 +28,11 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
+}
+
+form label {
+    margin: 10px;
 }
 
 #parkSearch {
@@ -55,6 +60,7 @@ form {
 .searchButton {
     border-radius: 30px;
     padding: 5px;
+    min-width: 146px;
 }
 
 .optionName {
@@ -64,5 +70,27 @@ form {
 
 .optionCode {
     margin-left: auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+footer a {
+    color: aqua;
+}
+
+#teddBox {
+    display: flex;
+    justify-content: center;
+}
+
+#tedd {
+    max-height: 50vh;
 }
 
