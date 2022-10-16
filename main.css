@@ -23,3 +23,7 @@ p {
 .subtitle {
     font-style: italic;
 }
+
+form {
+    margin: 15px;
+}   
