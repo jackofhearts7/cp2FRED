@@ -6,6 +6,7 @@ fetch("parkcodes.json")
         console.log(parksJson);
 
         document.getElementById("parkSearch").addEventListener("keyup", function(event) {
+            event.preventDefault();
             var input, filter, ul, li, a, i, txtValue;
             let counter = 0;
             input = document.getElementById("parkSearch");
@@ -21,7 +22,7 @@ fetch("parkcodes.json")
                     runningResults += '<div class="searchOption' + counter + '">';
                     runningResults += '<p class="optionName">' + currentName + '</p>';
                     runningResults += '<p class="optionCode">' + currentCode + '</p>';
-                    runningResults += '<button class="searchButton" value="' + counter + '">Learn About This Park</button>';
+                    runningResults += '<button class="searchButton" value="' + currentCode + '">Learn About This Park</button>';
                     runningResults += '</div>';
                     counter++
                 } else {
@@ -30,10 +31,20 @@ fetch("parkcodes.json")
                 if (counter >= 5) { break; }
             }
             document.getElementById("searchResults").innerHTML = runningResults;
-            console.log()
+
+            var searchButtons = document.getElementsByClassName("searchButton")
+            for (var i = 0; i < searchButtons.length; i++) {
+                function attempt() { passCodeToAPI(this); }
+                searchButtons[i].addEventListener('click', attempt, false);
+            }
         })
     })
 
+var passCodeToAPI = function(button) {
+    event.preventDefault();
+    var code = button.getAttribute("value");
+    console.log(code);
+};
 
 
 
