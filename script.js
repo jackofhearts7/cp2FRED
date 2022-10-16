@@ -1,4 +1,4 @@
-/* PARK SEARCH STUFF */
+/* PARK SEARCH STUFF *///
 fetch("parkcodes.json")
     .then(response => {
         return response.json();
