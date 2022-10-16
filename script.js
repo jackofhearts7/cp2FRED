@@ -44,13 +44,12 @@ var passCodeToAPI = function(button) {
     event.preventDefault();
     var code = button.getAttribute("value");
     console.log(code);
+    getParkInfoFromAPI(code);
 };
 
 
 /* API CALLING STUFF */
-document.getElementById("parkResults").addEventListener("click", function(event) {
-    event.preventDefault();
-    const parkCode = document.getElementById(parkInput).value;
+function getParkInfoFromAPI(parkCode) {
     if (parkCode === "") 
         return;
     console.log(parkCode);
@@ -60,6 +59,7 @@ fetch(parkURL)
 .then(function(parkResponse) {
     return parkResponse.json();
 }).then(function(json) {
+    console.log(json);
     let results = "";
     results +=  '<div class="container">' + '<div class="row">' + '<div class="col-md">' + json.fullName + "</h2>" + '</div>' + '</div>';
     results += '<div class="container">' + '</div>' + '<div class="container">' + '<div class="col-md">';
@@ -67,4 +67,4 @@ fetch(parkURL)
         results += '<div class="row">' + json.activities[i].name + '</div>' + '</div>'; 
     }    
     document.getElementById("parkResults").innerHTML = results;
-})});
+})};
