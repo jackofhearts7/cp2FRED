@@ -63,10 +63,11 @@ fetch(parkURL)
     console.log(json);
     let results = "";
     results +=  '<div class="activityResults">';
-    results += '<p class="optionName">' + json.data[0].fullName + '</p>';
+    results += '<p>Activities available at</p>';
+    results += '<p class="optionName">' + json.data[0].fullName + '</p><div class="activityBox">';
     for (let i = 0; i < json.data[0].activities.length; i++) {
         results += '<p class="activityName">' + json.data[0].activities[i].name + '<br>' +  '</p>';
     }    
-    results += '</div>';
+    results += '</div></div>';
     document.getElementById("parkResults").innerHTML = results;
 })};
