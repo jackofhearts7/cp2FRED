@@ -25,7 +25,7 @@ fetch("parkcodesfull.json")
                     runningResults += '<button class="searchButton" value="' + currentCode + '">Learn About This Park</button>';
                     runningResults += '</div>';
                     counter++
-                } else {
+                } else {``
                     continue;
                 }
                 if (counter >= 5) { break; }
@@ -62,10 +62,11 @@ fetch(parkURL)
 }).then(function(json) {
     console.log(json);
     let results = "";
-    results +=  '<div class="container">' + '<div class="row">' + '<div class="col-md"><h2>' + json.data[0].fullName + "</h2>" + '</div>' + '</div>';
-    results += '<div class="container">' + '</div>' + '<div class="container">' + '<div class="col-md">';
+    results +=  '<div class="activityResults">';
+    results += '<p class="optionName">' + json.data[0].fullName + '</p>';
     for (let i = 0; i < json.data[0].activities.length; i++) {
-        results += '<div class="row">' + json.data[0].activities[i].name + '</div>' + '</div>';
+        results += '<p class="activityResults">' + json.data[0].activities[i].name + '</p>';
     }    
+    results += '</div>';
     document.getElementById("parkResults").innerHTML = results;
 })};
