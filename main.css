@@ -94,14 +94,23 @@ footer a {
     max-height: 50vh;
 }
 
-.activityResults {
-    display: flex;
-    flex-direction: row;
+.parkResults {
     padding: 10px;
-    background-color: lightgreen;
-    width: 45%;
 }
 
+.activityResults {
+    padding: 10px;
+    margin: auto;
+    background-color: lightgreen;
+    width: 80%;
+    justify-self: center;
+}
+
+.activityBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 #activityName {
     width: 50%;
