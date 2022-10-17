@@ -65,7 +65,7 @@ fetch(parkURL)
     results +=  '<div class="activityResults">';
     results += '<p class="optionName">' + json.data[0].fullName + '</p>';
     for (let i = 0; i < json.data[0].activities.length; i++) {
-        results += '<p class="activityResults">' + json.data[0].activities[i].name + '<br>' +  '</p>';
+        results += '<p class="parkResults">' + json.data[0].activities[i].name + '<br>' +  '</p>';
     }    
     results += '</div>';
     document.getElementById("parkResults").innerHTML = results;
